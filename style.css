@@ -1,0 +1,107 @@
+    /*TO DELETE*/
+    
+    .pages.show .show-content {
+        overflow-x: unset;
+    }
+    /*END TO DELETE*/
+    
+    #showing {
+        cursor: pointer;
+    }
+    
+    #hidden {
+        display: none;
+    }
+    
+    .to535-homepage-cover {
+        background: #fefefe url("https://s5.gifyu.com/images/city4fafe9007eee0e7d.gif") no-repeat scroll 50% 50%;
+    }
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 424px;
+        border-radius: 3%;
+        perspective: 1000px;
+        /* Remove this if you don't want the 3D effect */
+    }
+    /* This container is needed to position the front and back side */
+    
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        cursor: pointer;
+    }
+    /* Position the front and back side */
+    
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        /* W3C */
+        -webkit-backface-visibility: hidden;
+        /* Safari & Chrome */
+        -moz-backface-visibility: hidden;
+        /* Firefox */
+        -ms-backface-visibility: hidden;
+        /* Internet Explorer */
+        -o-backface-visibility: hidden;
+        /* Opera */
+    }
+    /* Style the front side (fallback if image is missing) */
+    
+    .flip-card-front {
+        background-color: white;
+        color: black;
+    }
+    /* Style the back side */
+    
+    .flip-card-back {
+        background-color: white;
+        color: black;
+        transform: rotateY(180deg);
+    }
+    /*ALTERNATIVE OBJECTIVE BLOCKS*/
+    
+    .objectives-blocks--container {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 1rem;
+    }
+    
+    .objectives-block {
+        background: #FAFAFA;
+        border-radius: 10px;
+        padding: 20px;
+        border-bottom: #ffcb05 2px solid;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    /*COURSE MODULE BLOCKS*/
+    
+    .to533class-module-blocks {
+        background-color: #ffcb05 !important;
+    }
+    
+    .to533module-blocks {
+        background-color: #0093c1 !important;
+    }
+    
+    .to533module-blocks:hover,
+    .to533class-module-blocks:hover {
+        background-color: #00274c !important;
+    }
