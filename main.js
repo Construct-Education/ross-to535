@@ -15,16 +15,20 @@ $('#showing').click(function(event) {
 
 //INJECTING CODE INTO CANVAS USING A DIV AND A FILE STORED IN THE ACTUAL COURSE
 
-// RUN THE SCAN FUNCTION FOR ANY DIV 
+// RUN THE SCAN FUNCTION FOR ANY DIV ONCE YOU GET TO THIS FILE
 window.onload = function() {
     detectCodeInjector();
 }
 
 function detectCodeInjector() {
-
+    // FIND DIVS(s) WITH THE CLASS page-code-injector
     const injectors = document.querySelectorAll('.page-code-injector');
 
-    if (!(injectors)) {return} else {
+    // IF THERE ISNT A DIV ESCAPE THE FUNCTION
+    if (!(injectors)) {return} 
+    
+    // IF THERE IS RUN A LOOP FOR EACH DIV 
+    else {
         injectors.forEach(injector => {
 
             const link = injector.children[0].getAttribute('href');

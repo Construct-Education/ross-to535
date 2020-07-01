@@ -1,11 +1,4 @@
-    /*TO DELETE*/
-    
-    .pages.show .show-content {
-        overflow-x: unset;
-    }
-    /*END TO DELETE*/
-    
-    #showing {
+      #showing {
         cursor: pointer;
     }
     
@@ -13,9 +6,6 @@
         display: none;
     }
     
-    .to535-homepage-cover {
-        background: #fefefe url("https://s5.gifyu.com/images/city4fafe9007eee0e7d.gif") no-repeat scroll 50% 50%;
-    }
     /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
     
     .flip-card {
@@ -90,18 +80,4 @@
         border-bottom: #ffcb05 2px solid;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-    }
-    /*COURSE MODULE BLOCKS*/
-    
-    .to533class-module-blocks {
-        background-color: #ffcb05 !important;
-    }
-    
-    .to533module-blocks {
-        background-color: #0093c1 !important;
-    }
-    
-    .to533module-blocks:hover,
-    .to533class-module-blocks:hover {
-        background-color: #00274c !important;
     }
